@@ -5,7 +5,9 @@ set -e
 echo "Installing base Python packages from conda"
 
 conda install -y \
+    absl-py \
     altair \
+    astor \
     babel \
     beautifulsoup4 \
     biopython \
@@ -17,25 +19,32 @@ conda install -y \
     django \
     flake8 \
     flask \
+    gast \
+    google-pasta \
+    h5py \
     intel-openmp \
     ipython \
     jinja2 \
     jupyter \
     jupyterlab \
+    markdown \
     matplotlib \
     mkl \
     mkl-include \
     mypy \
     mypy_extensions \
+    ncurses \
     ninja \
     numba \
     numpy \
     opencv \
+    opt_einsum \
     pandas \
     pandoc \
     pillow \
     pip \
     pluggy \
+    protobuf \
     py-opencv \
     pycrypto \
     pygments \
@@ -52,9 +61,12 @@ conda install -y \
     sphinx_rtd_theme \
     statsmodels \
     sympy \
+    tensorboard \
+    termcolor \
     twine \
     typing \
     urllib3 \
+    wrapt \
     zeromq \
     zstd \
 ;

@@ -14,3 +14,5 @@ conda install -y -c pytorch \
 ;
 
 conda install -y lightgbm
+
+pip install tensorflow-gpu
