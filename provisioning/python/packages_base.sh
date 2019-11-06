@@ -4,7 +4,7 @@ set -e
 
 echo "Installing base Python packages from conda"
 
-conda install -y \
+conda install -y -c anaconda \
     absl-py \
     altair \
     astor \
@@ -52,6 +52,7 @@ conda install -y \
     pytest \
     pyyaml \
     pyzmq \
+    regex \
     requests \
     scikit-learn \
     scipy \
@@ -79,4 +80,12 @@ conda install -y -c conda-forge \
     google-api-python-client \
     jupyter_contrib_nbextensions \
     pelican \
+;
+
+echo "Installing base Python packages from pip"
+
+pip install \
+    fastBPE \
+    sacremoses \
+    subword_nmt \
 ;
