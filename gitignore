@@ -20,6 +20,7 @@ __pycache__/
 # Junk #
 ########
 .DS_Store*
+.zcompdump*
 .*.swp
 *.swp
 *.log
