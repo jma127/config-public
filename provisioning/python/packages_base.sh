@@ -80,6 +80,7 @@ conda install -y -c conda-forge \
     google-api-python-client \
     jupyter_contrib_nbextensions \
     pelican \
+    pybtex \
 ;
 
 echo "Installing base Python packages from pip"
