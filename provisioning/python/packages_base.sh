@@ -4,14 +4,14 @@ set -e
 
 echo "Installing base Python packages from conda"
 
-conda install -y -c anaconda \
-    absl-py \
+conda install -c conda-forge -y \
     altair \
     astor \
+    awscli \
     babel \
     beautifulsoup4 \
-    biopython \
     black \
+    boto3 \
     cffi \
     cmake \
     cython \
@@ -19,14 +19,14 @@ conda install -y -c anaconda \
     django \
     flake8 \
     flask \
-    gast \
-    google-pasta \
+    google-api-python-client \
     h5py \
     intel-openmp \
     ipython \
     jinja2 \
     jupyter \
     jupyterlab \
+    lz4 \
     markdown \
     matplotlib \
     mkl \
@@ -41,17 +41,18 @@ conda install -y -c anaconda \
     opt_einsum \
     pandas \
     pandoc \
+    pelican \
     pillow \
     pip \
     pluggy \
     protobuf \
-    py-opencv \
     pycrypto \
     pygments \
     pyopenssl \
     pytest \
     pyyaml \
     pyzmq \
+    py-opencv \
     regex \
     requests \
     scikit-learn \
@@ -62,7 +63,6 @@ conda install -y -c anaconda \
     sphinx_rtd_theme \
     statsmodels \
     sympy \
-    tensorboard \
     termcolor \
     twine \
     typing \
@@ -72,21 +72,10 @@ conda install -y -c anaconda \
     zstd \
 ;
 
-echo "Installing base Python packages from conda-forge"
-
-conda install -y -c conda-forge \
-    awscli \
-    boto3 \
-    google-api-python-client \
-    jupyter_contrib_nbextensions \
-    pelican \
-    pybtex \
-;
-
 echo "Installing base Python packages from pip"
 
-pip install \
-    fastBPE \
-    sacremoses \
-    subword_nmt \
-;
+#pip install \
+#    fastBPE \
+#    sacremoses \
+#    subword_nmt \
+#;

@@ -4,12 +4,15 @@ set -e
 
 echo "Installing CPU only Python packages"
 
+conda install -y -c conda-forge \
+    faiss \
+    libfaiss \
+    jax \
+    tensorboard \
+    xgboost \
+;
+
 conda install -y -c pytorch \
-    faiss-cpu \
     pytorch \
     torchvision \
 ;
-
-conda install -y lightgbm
-
-pip install tensorflow
